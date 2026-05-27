@@ -1115,14 +1115,17 @@ a.social-proof-card-feature:focus-visible {
 }
 @media (min-width: 720px) {
   .lemonades-feature {
-    grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+    grid-template-columns: minmax(0, 6fr) minmax(0, 5fr);
     align-items: stretch;
   }
 }
 .lemonades-photo {
   position: relative;
-  min-height: 240px;
   background: #000;
+  aspect-ratio: 896 / 802;
+}
+@media (min-width: 720px) {
+  .lemonades-photo { aspect-ratio: auto; }
 }
 .lemonades-photo img {
   width: 100%;
